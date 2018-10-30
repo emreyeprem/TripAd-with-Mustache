@@ -1,0 +1,23 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site.css" />
+</head>
+
+<body>
+
+  <a href="/add-task">Your Trips</a>
+
+<ul id="tripDetailContainer">
+  {{#tripList}}
+  <li>
+    <label>{{tripLocations}}</label>
+    <h5>Departure Date : {{tripDepartureDates}} </h5>
+    <h5>Return Date : {{tripReturnDates}}</h5>
+    <img src="{{tripLocationImage}}"/>
+  </li>
+  {{/tripList}}
+</ul>
+
+</body>
+
+</html>
